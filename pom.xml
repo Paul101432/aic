@@ -1,0 +1,99 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>org.noear</groupId>
+    <artifactId>solon-parent</artifactId>
+    <version>2.2.17</version>
+    <relativePath />
+  </parent>
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>xyz.herz</groupId>
+  <artifactId>aic</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>aic</name>
+
+  <description>
+    solon smart-http Lealone
+  </description>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <lealon.version>5.1.2</lealon.version>
+
+  </properties>
+
+  <dependencies>
+
+   <!--
+   嵌入式 出现问题 没有建库 不清楚持久化-->
+<!--   <dependency>
+      <groupId>org.lealone</groupId>
+      <artifactId>lealone-main</artifactId>
+      <version>${lealon.version}</version>
+    </dependency>-->
+
+  <dependency>
+      <groupId>org.lealone.plugins</groupId>
+      <artifactId>lealone-mysql</artifactId>
+      <version>${lealon.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.zaxxer</groupId>
+      <artifactId>HikariCP</artifactId>
+      <version>4.0.3</version>
+    </dependency>
+
+
+
+
+
+
+
+
+
+    <!-- 核心web  -->
+
+    <dependency>
+      <groupId>org.noear</groupId>
+      <artifactId>solon-lib</artifactId>
+    </dependency>
+
+
+
+    <!-- Http 启动器 -->
+    <dependency>
+      <groupId>org.noear</groupId>
+      <artifactId>solon.boot.smarthttp</artifactId>
+    </dependency>
+
+    <!-- Json序列化支持组件（原来在 solon-lib，v2.2.9 移到此处） -->
+    <dependency>
+      <groupId>org.noear</groupId>
+      <artifactId>solon.serialization.snack3</artifactId>
+    </dependency>
+
+    <!-- 静态文件支持组件 -->
+    <dependency>
+      <groupId>org.noear</groupId>
+      <artifactId>solon.web.staticfiles</artifactId>
+    </dependency>
+
+    <!-- 跨域处理组件 -->
+    <dependency>
+      <groupId>org.noear</groupId>
+      <artifactId>solon.web.cors</artifactId>
+    </dependency>
+
+    <!-- orm -->
+    <dependency>
+      <groupId>org.noear</groupId>
+      <artifactId>wood-solon-plugin</artifactId>
+    </dependency>
+
+  </dependencies>
+</project>
