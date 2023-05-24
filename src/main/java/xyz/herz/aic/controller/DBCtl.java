@@ -39,8 +39,7 @@ public class DBCtl {
                 .whereGt("u.age", 11)
                 .limit(0, 10000)
                 .selectCount();
-        System.out.println(data);
-        return "list";
+        return "list:"+data;
     }
 
 

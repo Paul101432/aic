@@ -40,6 +40,19 @@
       <groupId>org.lealone.plugins</groupId>
       <artifactId>lealone-mysql</artifactId>
       <version>${lealon.version}</version>
+    <exclusions>
+      <exclusion>
+        <groupId>org.yaml</groupId>
+        <artifactId>snakeyaml</artifactId>
+      </exclusion>
+    </exclusions>
+    </dependency>
+
+    <!--当前版本的lealone问题 等5.2测试调整   -->
+    <dependency>
+      <groupId>org.yaml</groupId>
+      <artifactId>snakeyaml</artifactId>
+      <version>1.33</version>
     </dependency>
 
     <dependency>
@@ -50,9 +63,15 @@
 
 
 
+    <!--test启动数据库--><!--
+    <dependency>
+      <groupId>org.lealone</groupId>
+      <artifactId>lealone-main</artifactId>
+      <version>${lealon.version}</version>
+      <scope>test</scope>
+    </dependency>
 
-
-
+-->
 
 
 

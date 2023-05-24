@@ -5,5 +5,11 @@ solon.app:
   group: demo
   name: aic
 
+
+# 参数 org.lealone.db.ConnectionSetting
+
 lealone.db1:
-  jdbcUrl: jdbc:lealone:tcp://localhost:9210/lealone?user=root # jdbc:lealone:embed:lealone?user=root #
+  # 嵌入式 jdbc:lealone:embed:lealone?user=root
+  # 数据库 jdbc:lealone:tcp://localhost:9210/lealone?user=root
+  #
+  jdbcUrl: jdbc:lealone:tcp://localhost:9210/lealone?user=root
