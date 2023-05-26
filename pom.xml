@@ -21,9 +21,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
         <lealon.version>5.1.2</lealon.version>
         <hikariCP.version>5.0.1</hikariCP.version>
+
+
     </properties>
 
     <dependencies>
@@ -80,6 +81,10 @@
             <groupId>org.noear</groupId>
             <artifactId>solon.web.cors</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>log4j2-solon-plugin</artifactId>
+        </dependency>
 
         <!--orm-->
         <dependency>
@@ -87,5 +92,26 @@
             <artifactId>wood-solon-plugin</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.dromara.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>6.0.0.M3</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.noear</groupId>
+                <artifactId>solon-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

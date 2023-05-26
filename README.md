@@ -16,7 +16,8 @@ spring          -> solon
 
 ## 相关文档
 
-+ [solon集成smart_http](https://solon.noear.org/article/90)
-+ [smartboot](https://smartboot.gitee.io/)
-+ [lealone](http://lealone.org/)
++ [solon文档-集成smart_http](https://solon.noear.org/article/90)
++ [smartboot文档](https://smartboot.gitee.io/)
++ [lealone文档](http://lealone.org/)
++ [log4j文档](https://logging.apache.org/log4j/2.x/manual/configuration.html)
 
